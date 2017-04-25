@@ -16,6 +16,7 @@ namespace gcp_ping_server
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
+                .UseUrls("http:/0.0.0.0:5000")
                 .Build();
 
             host.Run();
